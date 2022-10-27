@@ -29,7 +29,8 @@ class Pot
       end
     rescue ::StandardError => e
       puts "[E] #{e}"
-      break
+      c.close
+      return
     end
   end
 end
